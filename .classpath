@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/GitHub/org.eclipse.egit.github.core-2.1.5.jar/org.eclipse.egit.github.core-2.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/GitHub/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-examples-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-excelant-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-ooxml-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-ooxml-schemas-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/poi-scratchpad-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/poi-bin-3.11-20141221/poi-3.11/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/bsh.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/grmm-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/jgrapht-0.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/jwnl-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/mallet-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/mtj-0.9.9.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/openjgraph.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/lib/trove-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/dist/mallet.jar"/>
+	<classpathentry kind="lib" path="C:/Mallet/dist/mallet-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/NLP/jwnl-1.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/NLP/lucene-snowball-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/NLP/opennlp-maxent-3.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/NLP/opennlp-tools-1.5.3.jar"/>
+	<classpathentry kind="lib" path="C:/Didar&apos;s Computer/Software/Eclipse/NLP/opennlp-uima-1.5.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,27 @@
+bin\mallet import-dir --input C:\Users\S.M.Didar\workspace\ContributorAnalysis\src\output\outputSavedData\OrientTechnologies\Topics --output C:\Users\S.M.Didar\workspace\ContributorAnalysis\src\output\outputSavedData\OrientTechnologies\OrientTechnologies.mallet --keep-sequence --remove-stopwords
+
+
+
+
+bin\mallet train-topics  --input C:\Users\S.M.Didar\workspace\ContributorAnalysis\src\output\outputSavedData\OrientTechnologies\OrientTechnologies.mallet --num-topics 20 --optimize-interval 20 --output-state topic-state.gz  --output-topic-keys tutorial_keys.txt --output-doc-topics tutorial_composition.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ruf---------------------
+
+bin\mallet train-topics  --input C:\Users\S.M.Didar\workspace\ContributorAnalysis\src\output\outputSavedData\OrientTechnologies\OrientTechnologies.mallet 

@@ -1,0 +1,11 @@
+Hi @hmallett, this is already covered by #579. To avoid merge conflicts with that PR, I'm not going to merge this one in.
+I did look for that in the Rubocop PR commit logs, bit didn't see it!
+It was part of the huge 'Autocorrect offenses' commit.
+I'm going to merge this in pretty soon if no objections are raised.
+I'm assuming no objections ...
+@hmallett the Travis build indicates something's wrong with the foreign keys on MySQL and PostgreSQL. Can you take a look?
+Ouch! The Travis build is a mess! It worked fine for me using PostgreSQL 9.4 and Ruby 2.2. I think this needs some serious further investigation...
+Hi. Have you check your email configuration into Heroku? Since there's no sendmail command by default, you have to get a free addon for it like said here: https://devcenter.heroku.com/articles/smtp
+(certainly related to #571 )
+I'll try it now, thanks.
+Looks good. Thanks, @hmallett.

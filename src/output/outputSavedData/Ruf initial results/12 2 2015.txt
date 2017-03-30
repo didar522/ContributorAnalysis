@@ -1,0 +1,4 @@
+I like this. Is there any way we can automate this?
+I have taken the foreign keys out, because (as I understand it) some of the tests currently performed violate foreign key constraints. So for example, a test stubs out an article, but doesn't save it, but then tests if a comment can be saved. With no saved article, the fk constraint is violated.
+As far as I can tell, everything works, but without valid tests it's not a forward step to add the foreign keys.
+I'll have to look at the tests in more depth... (and learn rspec).
