@@ -65,7 +65,7 @@ public class RRCalc {
 //	for comment analysis 
 //	public static String filePath = "C:/Users/S.M.Didar/Dropbox/Didar DBPC/PhD Research/Winter 2016/Journal 2016/Analysis/V8 Getting New Metrics Data/V8.2 Data Collection Prepare weekly rate data/Slider/";
 //	public static String filePath = "C:/Users/S.M.Didar/OneDrive/Didar DBPC/PhD Research/Fall 2016/Work Packages/V3- Dataset preparation/";
-	public static String filePath = "C:/Users/S.M.Didar/Desktop/BS GitHub Platform Export 24.03.17/";
+	public static String filePath = "C:/Users/Didar/Desktop/BS GitHub Platform Export 24.03.17/";
 
 	
 	//	Project mbostock data
