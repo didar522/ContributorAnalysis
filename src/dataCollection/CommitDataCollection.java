@@ -27,9 +27,11 @@ import org.apache.poi.ss.usermodel.Row;
 import org.eclipse.egit.github.core.CommitFile;
 import org.eclipse.egit.github.core.PullRequest;
 import org.eclipse.egit.github.core.RepositoryCommit;
+import org.eclipse.egit.github.core.RepositoryContents;
 import org.eclipse.egit.github.core.RepositoryId;
 import org.eclipse.egit.github.core.RepositoryIssue;
 import org.eclipse.egit.github.core.service.CommitService;
+import org.eclipse.egit.github.core.service.ContentsService;
 import org.eclipse.egit.github.core.service.IssueService;
 import org.eclipse.egit.github.core.service.PullRequestService;
 import org.eclipse.egit.github.core.service.RepositoryService;
@@ -53,7 +55,7 @@ public class CommitDataCollection {
 	public static String [] GitCredits = {"didar522", "ammu69GITHUB05ma"};
 	
 //	public static String filePath= "C:/Users/S.M.Didar/Dropbox/Didar DBPC/PhD Research/Winter 2016/Journal 2016/Analysis/V8 Getting New Metrics Data/Data Collection/";
-	public static String filePath= "C:/Users/S.M.Didar/Desktop/BS GitHub Platform Export 24.03.17/";
+	public static String filePath= "C:/Users/S.M.Didar/Desktop/BS GitHub Platform Export 09.05.17/";
 	public static String fileName = "commitdata.xls"; 
 	
 	
@@ -88,19 +90,22 @@ public class CommitDataCollection {
 		
 		
 		
+			
+		
+		
 		
 		
 		RepositoryService repservice = new RepositoryService();
 		repservice.getClient().setCredentials(GitCredits[0], GitCredits[1]);
-        RepositoryId repo = new RepositoryId("brightsquid", "securehealthexchange.ca");
-//        RepositoryId repo = new RepositoryId("publify", "publify");
+        RepositoryId repo = new RepositoryId("brightsquid", "caleo");
+//        RepositoryId repo = new RepositoryId("danogwok", "publify");
 		
 //		IssueService issueservice = new IssueService ();
         CommitService commitservice = new CommitService ();
-//		PullRequestService pullservice = new PullRequestService();
+        ContentsService contentService = new ContentsService();
         
-//		List<PullRequest> pullList = null;
 		List<RepositoryCommit> commitList =null; 
+		List<RepositoryContents> test = null; 
 //		List<RepositoryIssue> issueList = null;
 		
 	    try {
@@ -110,11 +115,46 @@ public class CommitDataCollection {
 	    	commitList=commitservice.getCommits(repo);
 //	    	issueservice.getClient().setCredentials(GitCredits[0], GitCredits[1]);
 	    	
+//	    	
+//	    	test = contentService.getContents(repo, "config/environments/production.rb");
+//
+//	        List<RepositoryContents> contentList = contentService.getContents(repo);
+//	        for (RepositoryContents content : test){
+//	        
+//        for(int i=0;i<contentList.size();i++){
+//	            String filesize = content.getEncoding();
+//	           
+//	            System.out.println("================");
+//	            System.out.println(content.getName());
+//	            System.out.println(content.getEncoding());
+//	            System.out.println(content.getSize());
+//	            System.out.println(content.getType());
+//	            System.out.println(content.getName());
+//	            System.out.println(content.getName());
+//	            System.out.println(content.getName());
+//	            System.out.println(content.getName());
+//	            System.out.println(content.getName());
+//	            
+//	            
+//	            
+//	            
+//	            
+//	            
+//	            
+//	            
+//	            System.out.println(filesize);
+//	            System.out.println("================");
+//	      
+//	        }
+//	    	
+//	    	
+//	        }	
 	    	
-		} catch (Exception e) {
+	    	
+		} catch (IOException e) {
           e.printStackTrace();
 		}
-	    
+//	    
 //	    write pull data headings
 //	    {
 //	    	row = writeSheetPullData.createRow(0); 
@@ -267,8 +307,8 @@ public class CommitDataCollection {
 	    int intRowNum = 0; 
 	    
 	    
-	    for (int i=0;i<commitList.size();i++){       
-//	    for (int i=6000;i<7500;i++){       
+	   for (int i=0;i<commitList.size();i++){       
+//	    for (int i=1;i<2500;i++){       
 	    	
 	    	
 	    	String sha= commitList.get(i).getSha();
@@ -332,7 +372,8 @@ public class CommitDataCollection {
 	    	
 	    	
 	    	
-	    	
+	    	cellcommit = rowcommit.createCell(10);
+	    	cellcommit.setCellValue(fileList.get(j).getFilename());
 	    	
 	    	
 	    	}
